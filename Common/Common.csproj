@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Enums\RegistrationState.cs" />
+    <Compile Include="Enums\Bots.cs" />
+    <Compile Include="Enums\TypeAction.cs" />
+    <Compile Include="Enums\Departments.cs" />
+    <Compile Include="Enums\UserRole.cs" />
+    <Compile Include="Enums\EnumExtensions.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="Search\BaseSearchParams.cs" />
+    <Compile Include="Search\UsersSearchParams.cs" />
+    <Compile Include="Search\SearchResult.cs" />
+    <Compile Include="Configuration\SharedConfiguration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="2.13.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Troschuetz.Random" Version="5.0.1" />
+  </ItemGroup>
+</Project>
